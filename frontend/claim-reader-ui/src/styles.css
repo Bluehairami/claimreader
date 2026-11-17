@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --teal: #0f766e;
+  --teal-dark: #115e59;
+  --teal-light: #ccfbf1;
+  --slate-900: #0f172a;
+  --slate-700: #334155;
+  --slate-500: #64748b;
+  --slate-300: #cbd5e1;
+  --slate-200: #e2e8f0;
+  --slate-100: #f1f5f9;
+  --amber-bg: #fef3c7;
+  --amber: #92400e;
+  --red-bg: #fee2e2;
+  --red: #991b1b;
+  --green-bg: #dcfce7;
+  --green: #166534;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  color: var(--slate-900);
+  background: var(--slate-100);
+}
+
+h2 { margin: 0 0 8px; }
+a { color: var(--teal); }
+.container { max-width: 1200px; margin: 0 auto; padding: 24px; }
+.muted { color: var(--slate-500); }
+.error { color: #b91c1c; }
+
+.btn {
+  display: inline-block; padding: 9px 16px; border-radius: 8px; border: 1px solid transparent;
+  font: inherit; font-weight: 600; cursor: pointer; text-decoration: none;
+}
+.btn:disabled { opacity: .6; cursor: not-allowed; }
+.btn-primary { background: var(--teal); color: #fff; }
+.btn-primary:hover:not(:disabled) { background: var(--teal-dark); }
+.btn-secondary { background: #fff; color: var(--slate-700); border-color: var(--slate-300); }
